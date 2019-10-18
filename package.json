@@ -1,10 +1,11 @@
 {
-    "name": "classyt",
+    "name": "eventuloginapi",
     "version": "1.0.0",
-    "description": "Repaso que hice a partir de yt video",
+    "description": "First Try for the login API for Event-u ",
     "main": "index.js",
     "scripts": {
-        "dev": "nodemon index.js"
+        "dev": "nodemon index.js",
+        "start": "node index.js"
     },
     "author": "",
     "license": "ISC",

@@ -29,15 +29,15 @@ const userSchema = new mongoose.Schema({
         maxlength: 200
     },
     phone: {
-        type: String,
+        type: Number,
         minlength: 10,
-        maxlength: 200
+        maxlength: 15
     },
     usertype: {
-        type: String,
-        minlength: 10,
-        maxlength: 200
-    },
+        type: Number,
+        minlength: 01,
+        maxlength: 01
+    }
 })
 
 module.exports = mongoose.model('Users', userSchema)

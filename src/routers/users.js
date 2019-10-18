@@ -64,4 +64,24 @@ router.delete('/:id', async(req, res) => {
     }
 })
 
+router.post('/', async(req, res) => {
+    try {
+        const data = req.body
+        const createUser = await user.create(data)
+        res.json({
+            success: true,
+            message: 'Created user',
+            data: {
+                user: createUser
+            }
+        })
+    } catch (error) {
+        res.json({
+            sucess: false,
+            message: 'Something went wrong',
+            error: error.message
+        })
+    }
+})
+
 module.exports = router
